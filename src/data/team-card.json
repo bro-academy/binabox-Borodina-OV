@@ -1,0 +1,93 @@
+[
+  {
+    "id": "nova-riven",
+    "photo": "Image-nova.png",
+    "alt": "Nova",
+    "name": "Nova Riven",
+    "role": "Creative Architect",
+    "socials": [
+      { "type": "facebook", "url": "#", "icon": "#" },
+      { "type": "telegram", "url": "#", "icon": "#" },
+      { "type": "linkedin", "url": "#", "icon": "#" },
+      { "type": "instagram", "url": "#", "icon": "#" }
+    ]
+  },
+  {
+    "id": "echo-zero",
+    "photo": "echo.png",
+    "alt": "Echo",
+    "name": "Echo Zero",
+    "role": "Tech Whisperer",
+    "socials": [
+      { "type": "twitter", "url": "#", "icon": "#" },
+      { "type": "telegram", "url": "#", "icon": "#" },
+      { "type": "linkedin", "url": "#", "icon": "#" },
+      { "type": "instagram", "url": "#", "icon": "#" }
+    ]
+  },
+  {
+    "id": "kairo-null",
+    "photo": "kairo.png",
+    "alt": "Kairo",
+    "name": "Kairo Null",
+    "role": "Lore Engineer",
+    "socials": [
+      { "type": "twitter", "url": "#", "icon": "#" },
+      { "type": "facebook", "url": "#", "icon": "#" },
+      { "type": "telegram", "url": "#", "icon": "#" },
+      { "type": "instagram", "url": "#", "icon": "#" }
+    ]
+  },
+  {
+    "id": "dr-wex-omega",
+    "photo": "omega.png",
+    "alt": "Omega",
+    "name": "Dr. Wex Omega",
+    "role": "Visual Disruptor",
+    "socials": [
+      { "type": "twitter", "url": "#", "icon": "#" },
+      { "type": "facebook", "url": "#", "icon": "#" },
+      { "type": "telegram", "url": "#", "icon": "#" },
+      { "type": "linkedin", "url": "#", "icon": "#" },
+      { "type": "instagram", "url": "#", "icon": "#" }
+    ]
+  },
+  {
+    "id": "synthya-void",
+    "photo": "synthya.png",
+    "alt": "Synthya",
+    "name": "Synthya Void",
+    "role": "UX Seer",
+    "socials": [
+      { "type": "twitter", "url": "#", "icon": "#" }
+    ]
+  },
+  {
+    "id": "mirlo-drift",
+    "photo": "mirlo.png",
+    "alt": "Mirlo",
+    "name": "Mirlo Drift",
+    "role": "Community Catalyst",
+    "socials": [
+      { "type": "twitter", "url": "#", "icon": "#" },
+      { "type": "facebook", "url": "#", "icon": "#" },
+      { "type": "telegram", "url": "#", "icon": "#" },
+      { "type": "linkedin", "url": "#", "icon": "#" },
+      { "type": "instagram", "url": "#", "icon": "#" }
+    ]
+  },
+  {
+    "id": "axon-rune",
+    "photo": "axon.png",
+    "alt": "Axon",
+    "name": "Axon Rune",
+    "role": "Security Ghost",
+    "socials": [
+      { "type": "twitter", "url": "#", "icon": "#" },
+      { "type": "facebook", "url": "#", "icon": "#" },
+      { "type": "telegram", "url": "#", "icon": "#" },
+      { "type": "linkedin", "url": "#", "icon": "#" },
+      { "type": "instagram", "url": "#", "icon": "#" }
+    ]
+  }
+]

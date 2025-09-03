@@ -1,0 +1,19 @@
+<section class="blog">
+  <h2 class="blog__title">{{ blog.title }}</h2>
+
+  <ul class="blog__list">
+    {% for id in blog.items %}
+      {% for card in blogCards %}
+        {% if card.id == id %}
+          <li class="blog__item">
+            {% include "cards/blog-card.twig" with { post: card } %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+
+  <a href="{{ blog.button.url }}" class="button {{ blog.button.class }}">
+    {{ blog.button.label }}
+  </a>
+</section>

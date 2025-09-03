@@ -1,0 +1,16 @@
+{
+  "title": "Our blog",
+  "items": [
+    "neural-drift",
+    "deadframe",
+    "primal-exe",
+    "glitch-panther",
+    "white-protocol",
+    "retrocore"
+  ],
+  "button": {
+    "url": "#",
+    "label": "Read more",
+    "class": "blog__button button--large"
+  }
+}

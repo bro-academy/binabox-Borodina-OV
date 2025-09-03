@@ -1,0 +1,27 @@
+{
+  "title": "About us",
+  "description": "We craft digital artifacts for those who live between worlds. Our space is built for creators, collectors, and the quietly obsessed.",
+  "items": [
+    {
+      "title": "Crystal Clear Quality",
+      "text": "Every NFT we drop is razor-sharp, high-res, and glitch-free. Art that hits hard and stays clean."
+    },
+    {
+      "title": "Curated Depth",
+      "text": "Not just big-meaningful. Each piece tells a story, every collection builds a universe."
+    },
+    {
+      "title": "Rare Source Access",
+      "text": "Early drops. Backstage peeks. Our members don’t scroll — they unlock."
+    },
+    {
+      "title": "Living Network",
+      "text": "Our community isn't a list — it's a force. Artists, rebels, dreamers."
+    }
+  ],
+  "button": {
+    "url": "#",
+    "label": "Read more",
+    "class": "about__button button--large"
+  }
+}

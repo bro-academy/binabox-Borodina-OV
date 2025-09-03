@@ -1,39 +1,33 @@
-<footer>
- <img src="logo.png" alt="Logo BINABOX">
- <p>We are the best way to check the rarity of NFT collection</p>
- <h4>Navigation</h4>
-        <nav>
-           <ul>
-            <li>
-              <a href="/home">Home</a>
-            </li>
-             <li>
-                <a href="/blog">Blog</a>
-            </li>
-             <li>
-                <a href="/catalog">Catalog</a>
-            </li>
-                <li>
-                <a href="/contact">Contact Us</a>
-            </li>
-             <li>
-              <a href="/terms">Terms Canditions</a>
-            </li>
-             <li>
-                <a href="/policy">Privacy Policy</a>
-            </li>
-             <li>
-                <a href="/whitepaper">Whitepaper</a>
-            </li>
-                <li>
-                <a href="/help">Help Center</a>
-            </li>
-        </ul> 
-        <p>BINABOX 2025 - ALL rights reserved</p> 
-         <a href="#">Twitter<img src="#" alt="Tw" /></a>
-        <a href="#">Facebook<img src="#" alt="Fb" /></a>
-        <a href="#">Telegram<img src="#" alt="T" /></a>
-        <a href="#">YouTube<img src="#" alt="Yt" /></a>
-        <a href="#">Discord<img src="#" alt="D" /></a>
-        </nav>
-     </footer>
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <img src="{{ footer.brand.logo }}" alt="{{ footer.brand.alt }}" class="footer__brand-logo">
+      <p class="footer__brand-description">{{ footer.brand.description }}</p>
+    </div>
+
+    <nav class="footer__nav">
+      <ul class="footer__menu">
+        {% for link in footer.menu %}
+          <li class="footer__menu-item">
+            <a href="{{ link.url }}" class="footer__menu-link">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="footer__copy">
+      <p class="footer__text">{{ footer.copy }}</p>
+    </div>
+
+    <nav class="footer__social">
+      {% for social in footer.social %}
+        <a href="{{ social.url }}" class="footer__social-link">
+          {{ social.title }}
+          <img src="{{ social.icon }}" alt="{{ social.title }} icon" class="footer__social-icon">
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</footer>

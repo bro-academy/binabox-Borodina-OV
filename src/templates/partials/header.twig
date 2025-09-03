@@ -1,21 +1,24 @@
- <header>
-        <img src="logo.png" alt="Logo BINABOX">
-        <nav>
-        <ul>
-            <li>
-              <a href="/home">Home</a>
-            </li>
-             <li>
-                <a href="/blog">Blog</a>
-            </li>
-             <li>
-                <a href="/catalog">Catalog</a>
-            </li>
-                <li>
-                <a href="/about">About Us</a>
-            </li>
-        </ul>
-        </nav>
-        <a href="Diccord">{{header.default_button}}</a>
-        <button>Login</button>
-    </header>
+<header class="header">
+  <img src="{{ header.logo.src }}" alt="{{ header.logo.alt }}" class="header__logo">
+
+  <nav class="header__nav">
+    <ul class="header__menu">
+      {% for item in header.nav %}
+        <li class="header__menu-item">
+          <a href="{{ item.url }}" 
+             class="header__menu-link{% if item.active %} header__menu-link--active{% endif %}">
+            {{ item.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  {% for button in header.buttons %}
+    {% if button.type == "link" %}
+      <a href="{{ button.url }}" class="button {{ button.class }}">{{ button.label }}</a>
+    {% elseif button.type == "button" %}
+      <button class="button {{ button.class }}">{{ button.label }}</button>
+    {% endif %}
+  {% endfor %}
+</header>

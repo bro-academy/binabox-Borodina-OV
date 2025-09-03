@@ -1,0 +1,18 @@
+<section class="banner">
+            <h1 class="banner__title">{{ bunner.title }}
+            </h1>
+            <p class="banner__subtitle">{{ bunner.subtitle }}</p>
+            <img src="#" alt="Banner">
+            <dl class="banner__list">
+            {% for item in banner.list %}
+                <dt class="banner__number">{{ number }}</dt>
+                <dd class="banner__label">{{ label }}</dd>
+               {% endfor %}
+            </dl>
+            {% for button in bunner.buttons %}
+    {% if button.type == "link" %}
+            <button class="{{ button.class }}">{{ button.label }}</button>
+            <a href="{{ button.url }}" class="button {{ button.class }}">{{ button.label }}</a>
+            {% endif %}
+  {% endfor %}
+        </section>

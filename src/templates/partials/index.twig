@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ meta.title }}</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+  {% include 'header.twig' with { header: header } %}
+  <main class="main">
+    {% include 'banner.twig' with { banner: banner } %}
+    {% include 'catalog.twig' with { catalog: catalog } %}
+    {% include 'blog.twig' with { blog: blog } %}
+    {% include 'about.twig' with { about: about } %}
+    {% include 'team.twig' with { team: team } %}
+    {% include 'faq.twig' with { faq: faq } %}
+  </main>
+  {% include 'footer.twig' with { footer: footer } %}
+
+</body>
+</html>

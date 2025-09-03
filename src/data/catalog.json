@@ -1,0 +1,49 @@
+{
+  "title": "Catalog",
+  "viewAll": { "label": "See all", "url": "/catalog" },
+  "prevLabel": "previous arrow",
+  "nextLabel": "next arrow",
+
+  "items": [
+    {
+      "img": "skeleton.png",
+      "alt": "Skeleton",
+      "status": "new",
+      "name": "Echo of Bones",
+      "price": "$1990",
+      "url": "#"
+    },
+    {
+      "img": "cat.png",
+      "alt": "Cat",
+      "status": "new",
+      "name": "Nyx the Watcher",
+      "price": "$1990",
+      "url": "#"
+    },
+    {
+      "img": "scissor.png",
+      "alt": "Scissor",
+      "status": "sold",
+      "name": "Blade of Silence",
+      "price": "$20",
+      "url": "#"
+    },
+    {
+      "img": "core.png",
+      "alt": "Core",
+      "status": "sold",
+      "name": "Data Core: Alpha",
+      "price": "$1,000,000",
+      "url": "#"
+    },
+    {
+      "img": "console.png",
+      "alt": "Console",
+      "status": "",
+      "name": "Phantom Console",
+      "price": "$199,5",
+      "url": "#"
+    }
+  ]
+}

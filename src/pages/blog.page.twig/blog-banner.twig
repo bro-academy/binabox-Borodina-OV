@@ -1,0 +1,17 @@
+<section class="banner">
+    <h1 class="blog__title">{{ title }}</h1>
+    <nav class="nav__baner">
+        <img src="{{ banner.image.src }}" alt="{{ banner.image.alt }}" class="banner__blog">
+        <ul class="banner__blog-list">
+            {% for item in banner.menu %}
+                <li class="banner__list-item">
+                    {% if item.url %}
+                        <a href="{{ item.url }}" class="banner__list-link">{{ item.label }}</a>
+                    {% else %}
+                        <a class="banner__list-link">{{ item.label }}</a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</section>

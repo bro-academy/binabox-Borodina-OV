@@ -3,8 +3,13 @@
     <img src="{{ item.img }}" alt="{{ item.alt }}" class="catalog-card__img">
 
     {% if item.status %}
-      <span class="catalog-card__tag">{{ item.status }}</span>
-    {% endif %}
+  <span class="tag 
+    {% if item.status == 'New' %}tag--primary{% endif %}
+    {% if item.status == 'Sold Out' %}tag--accent{% endif %}
+  ">
+    {{ item.status }}
+  </span>
+{% endif %}
 
     <dl class="catalog-card__info">
       <dt class="catalog-card__name">{{ item.name }}</dt>

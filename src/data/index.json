@@ -1,5 +1,30 @@
 {
-  "index": {
-    "title": "Hello World!"
+    "title": "Hello World!",
+    "banner": {
+      "title": "WITH BINABOX EXRLORE NFT COLLECTION",
+      "subtitle": "We are the best way to check the rarity of NFT collection",
+      "list": [
+        {
+          "number": "2240+",
+          "label": "Total It eam"
+        },
+        {
+          "number": "1000+",
+          "label": "Profiles Whitelisted"
+        }
+      ],
+      "buttons": [
+        {
+          "type": "button",
+          "label": "Connect Wallet",
+          "class": "banner__button"
+        },
+        {
+          "type": "link",
+          "label": "Whitelist now",
+          "url": "Whitelistnow",
+          "class": "button banner__link"
+        }
+      ]
+    }
   }
-}

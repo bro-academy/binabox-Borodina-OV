@@ -1,3 +1,7 @@
+@import "./_about.scss";
+@import "./_blog.scss";
 @import "./_catalog.scss";
+@import "./_faq.scss";
 @import "./_main-bunner.scss";
 @import "./_tag.scss";
+@import "./_team.scss";

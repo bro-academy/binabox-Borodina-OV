@@ -1,0 +1,24 @@
+.banner {
+
+&__number {
+font-family: "Bakbak One",  Arial, sans-serif;
+font-weight: 400;
+font-size: 52px;
+}
+
+&__title {
+color: rgba(245, 248, 251, 1)
+}
+
+&__title--highlight {
+color: rgba(2, 101, 220, 1);
+}
+
+&__subtitle {
+font-size: 20px;
+}
+
+&__label {
+font-size: 14px;
+}
+}

@@ -1,0 +1,24 @@
+.button {
+    font-weight: 600;
+    gap: 8px;
+}
+
+&--large {
+    font-size: 18px;
+    padding: 10px 24px;
+
+}
+
+&--medium {
+    font-size: 16px;
+    padding: 8px 20px;
+}
+
+&--primary {
+    background-color: rgba(2, 101, 220, 1);
+}
+
+&--secondary {
+    border: 2px;
+    background-color: rgba(208, 215, 251, 0.17);
+}

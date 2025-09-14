@@ -1,0 +1,17 @@
+.team-member {
+font-weight: 400;
+background-color: rgba(29, 28, 40, 1);
+
+&__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 56px;
+}
+&__name {
+font-size: 24px;
+}
+
+&__role {
+font-size: 18px;
+} 
+}

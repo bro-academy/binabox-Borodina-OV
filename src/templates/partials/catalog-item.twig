@@ -1,0 +1,19 @@
+<article class="catalog-card">
+  <a href="{{ item.url }}" class="catalog-card__link">
+    <img src="{{ item.img }}" alt="{{ item.alt }}" class="catalog-card__img">
+
+    {% if item.status %}
+  <span class="tag 
+    {% if item.status == 'New' %}tag--primary{% endif %}
+    {% if item.status == 'Sold Out' %}tag--accent{% endif %}
+  ">
+    {{ item.status }}
+  </span>
+{% endif %}
+
+    <dl class="catalog-card__info">
+      <dt class="catalog-card__name">{{ item.name }}</dt>
+      <dd class="catalog-card__price">{{ item.price }}</dd>
+    </dl>
+  </a>
+</article>

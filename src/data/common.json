@@ -1,5 +1,8 @@
 {
-  "common": {
-    "siteTitle": "Bro Starter"
+  "header":{
+    "default_button": {
+      "text": "Discord",
+      "link": "Connekt"
+    }
   }
 }

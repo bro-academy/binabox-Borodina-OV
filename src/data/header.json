@@ -1,0 +1,25 @@
+{
+  "logo": {
+    "src": "logo.png",
+    "alt": "Logo BINABOX"
+  },
+  "nav": [
+    { "title": "Home", "url": "/home", "active": true },
+    { "title": "Blog", "url": "/blog", "active": false },
+    { "title": "Catalog", "url": "/catalog", "active": false },
+    { "title": "About Us", "url": "/about", "active": false }
+  ],
+  "buttons": [
+    {
+      "type": "link",
+      "label": "Discord",
+      "url": "https://discord.com",
+      "class": "header__link"
+    },
+    {
+      "type": "button",
+      "label": "Login",
+      "class": "header__button button--large"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<article class="blog-card">
+  <img src="{{ post.src }}" alt="{{ post.alt }}" class="blog-card__img">
+
+  <span class="blog-card__tag">{{ post.tag }}</span>
+
+  <img src="{{ post.authorIcon }}" alt="author icon" class="blog-card__author-icon">
+  <p class="blog-card__author-name">{{ post.author }}</p>
+
+  <img src="{{ post.dateIcon }}" alt="calendar" class="blog-card__calendar-icon">
+  <time datetime="{{ post.date }}" class="blog-card__date">{{ post.dateText }}</time>
+
+  <h3 class="blog-card__title">{{ post.title }}</h3>
+  <p class="blog-card__text">{{ post.text }}</p>
+
+  <a href="{{ post.url }}" class="button blog-card__read-more">
+    Read more <img src="{{ post.iconNext }}" alt="next arrow" class="button blog-card__icon-next">
+  </a>
+</article>

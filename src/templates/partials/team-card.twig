@@ -1,0 +1,17 @@
+<article class="team-member">
+  <img src="{{ member.photo }}" alt="{{ member.alt }}" class="team-member__photo">
+
+  <dl class="team-member__info">
+    <dt class="team-member__name">{{ member.name }}</dt>
+    <dd class="team-member__role">{{ member.role }}</dd>
+  </dl>
+
+  <div class="team-social">
+    {% for social in member.socials %}
+      <a href="{{ social.url }}" class="team-social__link">
+        {{ social.type | capitalize }}
+        <img src="{{ social.icon }}" alt="{{ social.type }}" class="team-social__icon">
+      </a>
+    {% endfor %}
+  </div>
+</article>

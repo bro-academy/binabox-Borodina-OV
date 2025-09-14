@@ -1,0 +1,6 @@
+{% for item in gallery %}
+  <figure class="blog-article__figure">
+    <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" class="blog-article__image">
+    <figcaption class="blog-article__caption">{{ item.caption }}</figcaption>
+  </figure>
+{% endfor %}

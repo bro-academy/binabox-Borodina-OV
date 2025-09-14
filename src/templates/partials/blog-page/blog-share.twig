@@ -1,0 +1,13 @@
+<div class="share">
+  <p class="share__label">Share:</p>
+  <ul class="share__list">
+    {% for item in share %}
+      <li class="share__item">
+        <a href="{{ item.url }}" class="share__link">
+          <img src="{{ item.icon }}" alt="{{ item.platform }} logo">
+          {{ item.platform }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

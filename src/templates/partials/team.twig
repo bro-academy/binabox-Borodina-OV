@@ -1,0 +1,13 @@
+<section class="team">
+  <h2 class="team__title section-title">{{ team.title }}</h2>
+
+  <div class="team__list">
+    {% for id in team.items %}
+      {% for member in teamCards %}
+        {% if member.id == id %}
+          {% include "cards/team-card.twig" with { member: member } %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</section>

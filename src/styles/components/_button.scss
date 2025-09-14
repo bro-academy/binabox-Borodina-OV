@@ -1,43 +1,24 @@
 .button {
-font-size: 18px;
-font-weight: 600;
-border: 2px solid rgba(208, 215, 251, 0.17);
-gap: 8px;
+    font-weight: 600;
+    gap: 8px;
 }
 
-&__primary--large {
-font-size: 18px;
-padding: 10px 24px;
-background-color: rgba(2, 101, 220, 1);
+&--large {
+    font-size: 18px;
+    padding: 10px 24px;
+
 }
 
-&__primary--medium {
-font-size: 16px;
-padding: 8px 20px;
-background-color: rgba(2, 101, 220, 1);
+&--medium {
+    font-size: 16px;
+    padding: 8px 20px;
 }
 
-&__primary--small {
-font-size: 14px;
-padding: 6px 12px;
-background-color: rgba(2, 101, 220, 1);
+&--primary {
+    background-color: rgba(2, 101, 220, 1);
 }
 
-&__secondary--large {
-font-size: 18px;
-padding: 10px 24px;
-background-color: transparent;
+&--secondary {
+    border: 2px;
+    background-color: rgba(208, 215, 251, 0.17);
 }
-
-&__secondary--medium {
-font-size: 16px;
-padding: 8px 20px;
-background-color: transparent;
-}
-
-&__secondary--small {
-font-size: 14px;
-padding: 6px 12px;
-background-color: transparent;
-}
-

@@ -1,7 +1,7 @@
 .button {
     font-weight: 600;
     gap: 8px;
-}
+
 
 &--large {
     font-size: 18px;
@@ -19,6 +19,6 @@
 }
 
 &--secondary {
-    border: 2px;
-    background-color: rgba(208, 215, 251, 0.17);
+    border: 2px solid rgba(208, 215, 251, 0.17)
+}
 }

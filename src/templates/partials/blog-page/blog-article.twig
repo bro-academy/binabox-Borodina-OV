@@ -1,0 +1,23 @@
+<section class="blog-content">
+{% include "components/banner.twig" with { banner: banner } %}
+  <article class="blog-article">
+
+    {% include "blog/_hero.twig" with { hero: article.hero } %}
+    <h2 class="blog-article__title">{{ article.title }}</h2>
+    <button class="blog-article__button">{{ article.category }}</button>
+
+    <img src="{{ article.author.icon }}" alt="author" class="blog-article__icon">
+    <img src="{{ article.date.icon }}" alt="calendar" class="blog-article__calendar">
+    <time datetime="{{ article.date.datetime }}" class="blog-article__date">{{ article.date.text }}</time>
+
+    {% include "blog/_paragraph.twig" with { text: article.intro } %}
+    {% include "blog/_points.twig" with { points: article.points } %}
+    {% include "blog/_features.twig" with { features: article.features } %}
+    {% include "blog/_quote.twig" with { quote: article.quote } %}
+    {% include "blog/_gallery.twig" with { gallery: article.gallery } %}
+    {% include "blog/_sections.twig" with { sections: article.sections } %}
+    {% include "blog/_tags.twig" with { tags: article.tags } %}
+    {% include "blog/_share.twig" with { share: article.share } %}
+
+  </article>
+</section>

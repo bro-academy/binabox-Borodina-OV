@@ -1,0 +1,33 @@
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <img src="{{ footer.brand.logo }}" alt="{{ footer.brand.alt }}" class="footer__brand-logo">
+      <p class="footer__brand-description">{{ footer.brand.description }}</p>
+    </div>
+
+    <nav class="footer__nav">
+      <ul class="footer__menu">
+        {% for link in footer.menu %}
+          <li class="footer__menu-item">
+            <a href="{{ link.url }}" class="footer__menu-link">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="footer__copy">
+      <p class="footer__text">{{ footer.copy }}</p>
+    </div>
+
+    <nav class="footer__social">
+      {% for social in footer.social %}
+        <a href="{{ social.url }}" class="footer__social-link">
+          {{ social.title }}
+          <img src="{{ social.icon }}" alt="{{ social.title }} icon" class="footer__social-icon">
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</footer>

@@ -1,9 +1,14 @@
 {% extends 'src/templates/layouts/base.twig' %}
 
-{% from 'src/templates/partials/ui/icon.twig' import icon %}
+{# {% from 'src/templates/partials/ui/icon.twig' import icon %} #}
 
 {% block content %}
-  <h1>{{ index.title }}</h1>
-
-  {% include 'src/templates/partials/welcome-section.twig' %}
+  {% include 'src/templates/partials/banner.twig' %} 
+  {% include 'src/templates/partials/catalog.twig' with { catalog: catalog } %}
+  {% include 'src/templates/partials/blog.twig' with { blog: blog } %}
+  {% include 'src/templates/partials/about.twig' with { about: about } %}
+  {% include 'src/templates/partials/team.twig' with { team: team } %}
+  {% include 'src/templates/partials/faq.twig' with { faq: faq } %}
 {% endblock %}
+
+

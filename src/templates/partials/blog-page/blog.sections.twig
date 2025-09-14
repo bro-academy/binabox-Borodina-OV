@@ -1,0 +1,9 @@
+{% for section in sections %}
+  <h3 class="blog-article__subtitle">{{ section.subtitle }}</h3>
+  {% for text in section.text %}
+    <p class="blog-article__text">{{ text }}</p>
+  {% endfor %}
+  {% if section.link %}
+    <p><a href="{{ section.link.href }}" class="blog-article__link">{{ section.link.text }}</a></p>
+  {% endif %}
+{% endfor %}

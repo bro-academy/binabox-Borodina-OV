@@ -1,2 +1,12 @@
-@use "./base/variables";
-@use "./base/global";
+@use "base/variables";
+@use "base/global";
+@use "ui/button";
+@use "layout/header";
+@use "layout/footer";
+@use "components/about";
+@use "components/blog";
+@use "components/catalog";
+@use "components/faq";
+@use "components/main-bunner";
+@use "components/tag";
+@use "components/team";

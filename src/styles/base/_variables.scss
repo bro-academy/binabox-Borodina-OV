@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --text-color: #333333;
-  --background-color: #f8f9fa;
-  --white-color: #ffffff;
+  --color-white: #ffffff;
+  --color-gray: #cacaca;
+  --color-bg: #f0f6fd;
 }
+
+$base-font: "Poppins", "Arial", sans-serif;
+$accent-font: "Bakbak One", "Arial", "Helvetica", sans-serif;

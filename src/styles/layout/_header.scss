@@ -7,3 +7,13 @@
   padding: 0 32px;
   background: rgba(13, 13, 21, 1);
 }
+
+  .header__menu-link {
+    text-decoration: none;
+    color:rgba(245, 248, 251, 1);
+  
+
+    &--active {
+      color:rgba(2, 101, 220, 1);
+    }
+  }

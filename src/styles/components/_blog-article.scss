@@ -1,0 +1,25 @@
+.blog-article {
+    margin-bottom: 48px;
+
+    &__title {
+        font-size: 36px;
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+
+    &__point {
+        font-size: 18px;
+    }
+
+    &__quote {
+        background-color: rgba(0, 39, 84, 1);
+        border-radius: 16px;
+        font-family: "Bakbak One", "Arial", sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+        color: rgba(248, 247, 255, 1);
+    }
+}

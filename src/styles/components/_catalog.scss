@@ -1,7 +1,9 @@
+@use '../base/variables' as *;
+
 .catalog {
-    &-card__price {
-        font-family: $accent-font;
-        font-weight: 400;
-        font-size: 36px;
-    }
+&-card__price {
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 36px;
+}
 }

@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 .faq {
     &__question {
         font-family: $accent-font;

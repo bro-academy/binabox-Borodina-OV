@@ -1,9 +1,13 @@
 {
-  "title": "Catalog",
-  "viewAll": { "label": "See all", "url": "/catalog" },
-  "prevLabel": "previous arrow",
-  "nextLabel": "next arrow",
-
+  "catalog": {
+    "title": "Catalog",
+    "viewAll": {
+      "label": "See all",
+      "url": "/catalog"
+    },
+    "prevLabel": "previous arrow",
+    "nextLabel": "next arrow"
+  },
   "items": [
     {
       "img": "skeleton.png",

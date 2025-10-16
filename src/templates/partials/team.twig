@@ -3,9 +3,9 @@
 
   <div class="team__list">
     {% for id in team.items %}
-      {% for member in teamCards %}
+      {% for member in teamcard.teamcard %}
         {% if member.id == id %}
-          {% include "cards/team-card.twig" with { member: member } %}
+          {% include 'team-card.twig' with { member: member } %}
         {% endif %}
       {% endfor %}
     {% endfor %}

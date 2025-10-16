@@ -1,14 +1,24 @@
 {
-  "title": "Our blog",
   "banner": {
-    "image": {
-      "src": "#",
-      "alt": "Banner"
-    },
-    "menu": [
-      { "label": "Home", "url": "Home" },
-      { "label": "Our blog", "url": "Ourblog" },
-      { "label": "The Basilisks NFT", "url": null }
-    ]
+    "title": "Our blog",
+      "image": {
+        "src": "#",
+        "alt": "Banner"
+      },
+      "menu": [
+        {
+          "label": "Home",
+          "url": "Home"
+        },
+        {
+          "label": "Our blog",
+          "url": "Ourblog"
+        },
+        {
+          "label": "The Basilisks NFT",
+          "url": null
+        }
+      ]
+    }
   }
-}
+  

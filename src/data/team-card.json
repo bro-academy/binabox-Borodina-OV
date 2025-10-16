@@ -1,4 +1,5 @@
-[
+{
+  "teamcard": [
   {
     "id": "nova-riven",
     "photo": "Image-nova.png",
@@ -91,3 +92,4 @@
     ]
   }
 ]
+}

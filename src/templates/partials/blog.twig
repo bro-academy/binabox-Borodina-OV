@@ -3,10 +3,10 @@
 
   <ul class="blog__list">
     {% for id in blog.items %}
-      {% for card in blogCards %}
-        {% if card.id == id %}
+      {% for post in blogcard.blogcard %}
+        {% if post.id == id %}
           <li class="blog__item">
-            {% include "cards/blog-card.twig" with { post: card } %}
+            {% include 'partials/blog-card.twig' with { post: post } %}
           </li>
         {% endif %}
       {% endfor %}

@@ -1,0 +1,11 @@
+@use '../base/variables' as *;
+
+.share {
+    &__label {
+        font-size: 16px;
+    }
+
+    &__item {
+        color: var(--color-white) ;
+    }
+}

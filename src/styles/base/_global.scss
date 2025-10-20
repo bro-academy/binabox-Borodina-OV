@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+body {
+    font-family: $base-font;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    background-color:rgba(13, 13, 21, 1);
+    color: var(--color-white);
+}
+  
+a {
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+h1 {
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+} 
+
+h2, h3 {
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+p {
+    font-weight: 400;
+    color: var(--color-gray);
+}
+
+time {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-gray);
+}
+
+dd {
+    font-weight: 400;
+    color: var(--color-gray);
+}

@@ -11,7 +11,7 @@
   <ul class="catalog__list">
     {% for item in catalog.items %}
       <li class="catalog__item">
-        {% include 'catalog-card.twig' with { item: item } %}
+        {% include 'catalog-item.twig' with { item: item } %}
       </li>
     {% endfor %}
   </ul>

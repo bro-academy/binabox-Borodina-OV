@@ -1,9 +1,13 @@
 <section class="banner">
-    <h1 class="blog__title">{{ title }}</h1>
+    <h1 class="blog__title">{{ blog_banner.title }}</h1>
     <nav class="nav__baner">
-        <img src="{{ banner.image.src }}" alt="{{ banner.image.alt }}" class="banner__blog">
+        <img
+			src="{{ blog_banner.image.src }}"
+			alt="{{ blog_banner.image.alt }}"
+			class="banner__blog"
+		>
         <ul class="banner__blog-list">
-            {% for item in banner.menu %}
+            {% for item in blog_banner.menu %}
                 <li class="banner__list-item">
                     {% if item.url %}
                         <a href="{{ item.url }}" class="banner__list-link">{{ item.label }}</a>

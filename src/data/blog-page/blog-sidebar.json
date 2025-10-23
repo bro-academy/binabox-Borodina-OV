@@ -1,0 +1,69 @@
+{
+    "blog_sidebar": {
+      "categories_title": "Categories",
+      "categories": [
+        {
+          "name": "Our blog",
+          "count": 12,
+          "url": "#"
+        },
+        {
+          "name": "Metaverse",
+          "count": 24,
+          "url": "#"
+        },
+        {
+          "name": "Gaming",
+          "count": 24,
+          "url": "#"
+        },
+        {
+          "name": "Art",
+          "count": 24,
+          "url": "#"
+        },
+        {
+          "name": "Robot",
+          "count": 24,
+          "url": "#"
+        },
+        {
+          "name": "Lauchpad",
+          "count": 24,
+          "url": "#"
+        },
+        {
+          "name": "Crypto",
+          "count": 430,
+          "url": "#"
+        }
+      ],
+      "tags_title": "Tag",
+      "tags": [
+        {
+          "name": "NFT",
+          "url": "#"
+        },
+        {
+          "name": "ICO",
+          "url": "#"
+        },
+        {
+          "name": "Robot",
+          "url": "#"
+        },
+        {
+          "name": "Crypto",
+          "url": "#"
+        },
+        {
+          "name": "Lauchpad",
+          "url": "#"
+        },
+        {
+          "name": "Metaverse",
+          "url": "#"
+        }
+      ]
+    }
+}

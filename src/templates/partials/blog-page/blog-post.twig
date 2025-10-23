@@ -1,0 +1,67 @@
+<article class="blog-post">
+	<figure class="blog-post__illustration blog-post__illustration--wide">
+		{# {{ picture('blog-post__illustration-image', blog_post.main_image.src, post.main_image.alt) }} #}
+		<figcaption class="blog-post__illustration-caption">{{ blog_post.main_image.caption }}</figcaption>
+	</figure>
+
+	<h3 class="blog-post__main-title">{{ blog_post.title }}</h3>
+	<p class="blog-post__label button button--primary">{{ blog_post.category }}</p>
+
+	<div class="blog-post__meta">
+		<p>
+			{# {{ icon('', 'user', 16, 16) }} #}
+			{{ blog_post.author }}
+		</p>
+		<time datetime="{{ blog_post.date_iso }}">
+			{# {{ icon('', 'calendar', 16, 16) }} #}
+			{{ blog_post.date_human }}
+		</time>
+	</div>
+
+	<p class="blog-post__text">{{ blog_post.intro }}</p>
+
+	<ul class="blog-post__bullet-list">
+		{% for item in blog_post.bullets %}
+			<li>{{ item }}</li>
+		{% endfor %}
+	</ul>
+
+	<ul class="blog-post__unordered-list logo-bullet-list">
+		{% for item in blog_post.ordered %}
+			<li class="logo-bullet-list__item">{{ item }}</li>
+		{% endfor %}
+	</ul>
+
+	{# {% include 'ui/blockquote.twig' with { item: blog_post.blockquote } %} #}
+
+	{% for image in blog_post.additional_images %}
+		<figure class="blog-post__illustration">
+			{# {{ picture('blog-post__illustration-image', image.src, image.alt) }} #}
+			<figcaption class="blog-post__illustration-caption">{{ image.caption }}</figcaption>
+		</figure>
+	{% endfor %}
+
+	{% for section in blog_post.sections %}
+		<h4 class="blog-post__subtitle">{{ section.title }}</h4>
+		{% for paragraph in section.text %}
+			<p class="blog-post__text">{{ paragraph }}</p>
+		{% endfor %}
+	{% endfor %}
+
+	<footer class="blog-post__footer">
+		<div class="blog-post__footer-section">
+			<p class="blog-post__footer-text">Tags:</p>
+			<ul class="blog-post__tags-list">
+				{% for tag in blog_post.tags %}
+					<li>
+						<a class="button button--small" href="{{ tag.url }}">{{ tag.text }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="blog-post__footer-section">
+			<p class="blog-post__footer-text">Share:</p>
+			{# {% include 'ui/social-list.twig' with { items: blog_post.share, class: "blog-post__social-list" } %} #}
+		</div>
+	</footer>
+</article>

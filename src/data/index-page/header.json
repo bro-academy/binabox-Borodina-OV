@@ -29,6 +29,12 @@
     "buttons": [
       {
         "type": "link",
+        "label": "Search",
+        "url": "#",
+        "class": "button--search"
+      },
+      {
+        "type": "link",
         "label": "Discord",
         "url": "https://discord.com",
         "class": "header__link"

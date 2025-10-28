@@ -9,12 +9,12 @@
     "nextLabel": "next arrow",
 	"items": [
 	  {
-		"img": "skeleton.png",
+		"img": "catalog/echo-of-bones.jpg",
 		"alt": "Skeleton",
 		"status": "new",
 		"name": "Echo of Bones",
 		"price": "$1990",
-		"url": "#"
+		"url": "/"
 	  },
 	  {
 		"img": "cat.png",

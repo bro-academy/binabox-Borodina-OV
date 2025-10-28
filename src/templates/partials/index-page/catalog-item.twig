@@ -1,11 +1,23 @@
+{% import '../ui/picture.twig' as ui %}
+
 <article class="catalog-card">
   <a href="{{ item.url }}" class="catalog-card__link">
-    <img src="{{ item.img }}" alt="{{ item.alt }}" class="catalog-card__img">
+
+    {{ ui.picture(
+  "catalog-card__img",
+  item.src,
+  item.sources,
+  item.alt,
+  item.width,
+  item.height,
+  'center',
+  'cover'
+) }}
 
     {% if item.status %}
 		<span class="tag 
-			{% if item.status == 'New' %}tag--primary{% endif %}
-			{% if item.status == 'Sold Out' %}tag--accent{% endif %}
+			{% if item.status == "New" %}tag--primary{% endif %}
+			{% if item.status == "Sold Out" %}tag--accent{% endif %}
 		">
 			{{ item.status }}
 		</span>

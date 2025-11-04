@@ -8,7 +8,7 @@
   background: rgba(13, 13, 21, 1);
 }
   .header__logo {
-   background: blue;
+   background: transparent;
   }
 
   // .header__nav {
@@ -50,5 +50,6 @@
 .header__buttons {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  margin-left: auto;
 }

@@ -1,10 +1,3 @@
-.header__buttons {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-left: auto;
-}
-
 .button {
   -webkit-appearance: none;
   appearance: none;
@@ -17,17 +10,27 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 
   &--large {
     font-size: 18px;
-    padding: 10px 24px;
+    padding: 10px 24px; 
+    min-width: 141px;
     height: 48px;
   }
 
   &--medium {
     font-size: 16px;
     padding: 8px 20px;
+    min-width: 127px;
     height: 40px;
+  }
+
+   &--small {
+    font-size: 14px;
+    padding: 6px 12px;
+    min-width: 96px;
+    height: 32px;
   }
 
   &--primary {
@@ -35,29 +38,17 @@
     background-color: rgba(2, 101, 220, 1);
     color: rgba(245, 248, 251, 1);
     border: none;
-    width: 134px;
-    height: 48px;
-    cursor: pointer;
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: rgba(56, 146, 243, 0.3);
-      opacity: 0;
-      transition: opacity 0.3s;
-      pointer-events: none;
-    }
-
-    &:hover::before { opacity: 1; }
 
     &:active { background-color: rgba(0, 84, 182, 1); }
+    
+    &:hover { background-color: rgba(14, 115, 230, 1); }
 
-    &:disabled {
-      background-color: rgba(2, 101, 220, 0.3);
-      cursor: not-allowed;
-    }
+    &:disabled,
+    &[disabled] {
+    background-color: rgba(2, 101, 220, 0.3);
+    cursor: not-allowed;
+   }
+
   }
 
   &--secondary {
@@ -86,59 +77,5 @@
       opacity: 0.5;
       cursor: not-allowed;
     }
-  }
-
-  &--search {
-    position: relative;
-    width: 188px;
-    height: 48px;
-    padding: 0 16px 0 44px;
-    background: rgba(13, 13, 21, 1);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: rgba(245, 248, 251, 1);
-    margin-right: 24px;
-    font-weight: 500;
-    justify-content: flex-start;
-    cursor: pointer;
-    transition: all 0.2s ease;
-
-    /* разделитель */
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: -12px;
-      transform: translateY(-50%);
-      width: 2px;
-      height: 24px;
-      border-radius: 1px;
-      background: rgba(208, 215, 251, 0.17);
-      pointer-events: none;
-    }
-
-    /* иконка лупы */
-    &::before {
-      content: "";
-      position: absolute;
-      left: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 18px;
-      height: 18px;
-      background: no-repeat center / contain url("data:image/svg+xml;utf8,\
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='7'/><line x1='21' y1='21' x2='16.65' y2='16.65'/></svg>");
-      opacity: 0.9;
-      pointer-events: none;
-    }
-
-    &:hover { border-color: rgba(208, 215, 251, 0.17); }
-
-    &:focus-visible {
-      outline: none;
-      border-color: rgba(208, 215, 251, 0.17);
-      box-shadow: 0 0 0 2px rgba(56, 146, 243, .25);
-    }
-
-    &:active { background: rgba(20, 20, 28, 1); }
   }
 }

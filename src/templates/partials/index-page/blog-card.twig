@@ -1,5 +1,17 @@
+{% import '../ui/picture.twig' as ui %}
+
+
 <article class="blog-card">
-  <img src="{{ post.src }}" alt="{{ post.alt }}" class="blog-card__img">
+  {{ ui.picture(
+  'blog-card__img',
+  post.src,
+  post.alt,
+  0,
+  0,
+  'center',
+  'cover'
+) }}
+
 
   <span class="blog-card__tag">{{ post.tag }}</span>
 

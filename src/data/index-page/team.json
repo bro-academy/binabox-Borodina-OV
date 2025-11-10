@@ -4,95 +4,256 @@
 		"items": [
 			{
 				"id": "nova-riven",
-				"photo": "Image-nova.png",
+				"photo": "nova.jpg",
 				"alt": "Nova",
 				"name": "Nova Riven",
 				"role": "Creative Architect",
-				"socials": [
-					{ "type": "facebook", "url": "#", "icon": "#" },
-					{ "type": "telegram", "url": "#", "icon": "#" },
-					{ "type": "linkedin", "url": "#", "icon": "#" },
-					{ "type": "instagram", "url": "#", "icon": "#" }
-				]
-			},
-			{
-				"id": "echo-zero",
-				"photo": "echo.png",
-				"alt": "Echo",
-				"name": "Echo Zero",
-				"role": "Tech Whisperer",
-				"socials": [
-					{ "type": "twitter", "url": "#", "icon": "#" },
-					{ "type": "telegram", "url": "#", "icon": "#" },
-					{ "type": "linkedin", "url": "#", "icon": "#" },
-					{ "type": "instagram", "url": "#", "icon": "#" }
-				]
-			},
-			{
-				"id": "kairo-null",
-				"photo": "kairo.png",
-				"alt": "Kairo",
-				"name": "Kairo Null",
-				"role": "Lore Engineer",
-				"socials": [
-					{ "type": "twitter", "url": "#", "icon": "#" },
-					{ "type": "facebook", "url": "#", "icon": "#" },
-					{ "type": "telegram", "url": "#", "icon": "#" },
-					{ "type": "instagram", "url": "#", "icon": "#" }
-				]
-			},
-			{
-				"id": "dr-wex-omega",
-				"photo": "omega.png",
-				"alt": "Omega",
-				"name": "Dr. Wex Omega",
-				"role": "Visual Disruptor",
-				"socials": [
-					{ "type": "twitter", "url": "#", "icon": "#" },
-					{ "type": "facebook", "url": "#", "icon": "#" },
-					{ "type": "telegram", "url": "#", "icon": "#" },
-					{ "type": "linkedin", "url": "#", "icon": "#" },
-					{ "type": "instagram", "url": "#", "icon": "#" }
-				]
-			},
-			{
-				"id": "synthya-void",
-				"photo": "synthya.png",
-				"alt": "Synthya",
-				"name": "Synthya Void",
-				"role": "UX Seer",
-				"socials": [
-					{ "type": "twitter", "url": "#", "icon": "#" }
-				]
-			},
-			{
-				"id": "mirlo-drift",
-				"photo": "mirlo.png",
-				"alt": "Mirlo",
-				"name": "Mirlo Drift",
-				"role": "Community Catalyst",
-				"socials": [
-					{ "type": "twitter", "url": "#", "icon": "#" },
-					{ "type": "facebook", "url": "#", "icon": "#" },
-					{ "type": "telegram", "url": "#", "icon": "#" },
-					{ "type": "linkedin", "url": "#", "icon": "#" },
-					{ "type": "instagram", "url": "#", "icon": "#" }
-				]
-			},
-			{
-				"id": "axon-rune",
-				"photo": "axon.png",
-				"alt": "Axon",
-				"name": "Axon Rune",
-				"role": "Security Ghost",
-				"socials": [
-					{ "type": "twitter", "url": "#", "icon": "#" },
-					{ "type": "facebook", "url": "#", "icon": "#" },
-					{ "type": "telegram", "url": "#", "icon": "#" },
-					{ "type": "linkedin", "url": "#", "icon": "#" },
-					{ "type": "instagram", "url": "#", "icon": "#" }
-				]
-			}
-		]
-	}
+				"src": "team/nova.jpg",
+				"sources": [
+					{
+						"src": "team/nova.jpg",
+						"type": "jpg"
+					}
+			],
+			"socials": [
+				{
+					"type": "facebook",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "telegram",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "linkedin",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "instagram",
+					"url": "#",
+					"icon": "#"
+				}
+			]
+		},
+		{
+			"id": "echo-zero",
+			"photo": "echo.jpg",
+			"alt": "Echo",
+			"name": "Echo Zero",
+			"role": "Tech Whisperer",
+			"src": "team/echo.jpg",
+			"sources": [
+				{
+					"src": "team/echo.jpg",
+					"type": "jpg"
+				}
+			],
+			"socials": [
+				{
+					"type": "twitter",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "telegram",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "linkedin",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "instagram",
+					"url": "#",
+					"icon": "#"
+				}
+			]
+		},
+		{
+			"id": "kairo-null",
+			"photo": "kairo.jpg",
+			"alt": "Kairo",
+			"name": "Kairo Null",
+			"role": "Lore Engineer",
+			"src": "team/kairo.jpg",
+			"sources": [
+				{
+					"src": "team/kairo.jpg",
+					"type": "jpg"
+				}
+			],
+			"socials": [
+				{
+					"type": "twitter",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "facebook",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "telegram",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "instagram",
+					"url": "#",
+					"icon": "#"
+				}
+			]
+		},
+		{
+			"id": "dr-wex-omega",
+			"photo": "omega.jpg",
+			"alt": "Omega",
+			"name": "Dr. Wex Omega",
+			"role": "Visual Disruptor",
+			"src": "team/omega.jpg",
+			"sources": [
+				{
+					"src": "team/omega.jpg",
+					"type": "jpg"
+				}
+			],
+			"socials": [
+				{
+					"type": "twitter",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "facebook",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "telegram",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "linkedin",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "instagram",
+					"url": "#",
+					"icon": "#"
+				}
+			]
+		},
+		{
+			"id": "synthya-void",
+			"photo": "synthya.jpg",
+			"alt": "Synthya",
+			"name": "Synthya Void",
+			"role": "UX Seer",
+			"src": "team/synthya.jpg",
+			"sources": [
+				{
+					"src": "team/synthya.jpg",
+					"type": "jpg"
+				}
+			],
+			"socials": [
+				{
+					"type": "twitter",
+					"url": "#",
+					"icon": "#"
+				}
+			]
+		},
+		{
+			"id": "mirlo-drift",
+			"photo": "mirlo.jpg",
+			"alt": "Mirlo",
+			"name": "Mirlo Drift",
+			"role": "Community Catalyst",
+			"src": "team/mirlo.jpg",
+			"sources": [
+				{
+					"src": "team/mirlo.jpg",
+					"type": "jpg"
+				}
+			],
+			"socials": [
+				{
+					"type": "twitter",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "facebook",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "telegram",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "linkedin",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "instagram",
+					"url": "#",
+					"icon": "#"
+				}
+			]
+		},
+		{
+			"id": "axon-rune",
+			"photo": "axon.jpg",
+			"alt": "Axon",
+			"name": "Axon Rune",
+			"role": "Security Ghost",
+			"src": "team/axon.jpg",
+			"sources": [
+				{
+					"src": "team/axon.jpg",
+					"type": "jpg"
+				}
+			],
+			"socials": [
+				{
+					"type": "twitter",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "facebook",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "telegram",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "linkedin",
+					"url": "#",
+					"icon": "#"
+				},
+				{
+					"type": "instagram",
+					"url": "#",
+					"icon": "#"
+				}
+			]
+		}
+	]
+}
 }

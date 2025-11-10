@@ -1,5 +1,17 @@
-<article class="team-member">
-  <img src="{{ member.photo }}" alt="{{ member.alt }}" class="team-member__photo">
+{% import '../ui/picture.twig' as ui %}
+
+ <article class="team-member">
+
+    {{ ui.picture(
+        "team-member__img",
+        member.src,
+        member.sources,
+        member.alt,
+        member.width,
+        member.height,
+        'center',
+        'cover'
+    ) }}
 
   <dl class="team-member__info">
     <dt class="team-member__name">{{ member.name }}</dt>

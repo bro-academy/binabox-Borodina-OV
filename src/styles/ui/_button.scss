@@ -4,6 +4,7 @@
   border: none;
   background: none;
   text-decoration: none;
+  position: relative;
 
   font-weight: 600;
   display: inline-flex;
@@ -14,68 +15,66 @@
 
   &--large {
     font-size: 18px;
-    padding: 10px 24px; 
+    padding: 10px 24px;
     min-width: 141px;
-    height: 48px;
+    min-height: 48px;
   }
 
   &--medium {
     font-size: 16px;
     padding: 8px 20px;
     min-width: 127px;
-    height: 40px;
+    min-height: 40px;
   }
 
-   &--small {
+  &--small {
     font-size: 14px;
     padding: 6px 12px;
     min-width: 96px;
-    height: 32px;
+    min-height: 32px;
   }
 
   &--primary {
-    position: relative;
     background-color: rgba(2, 101, 220, 1);
     color: rgba(245, 248, 251, 1);
-    border: none;
 
-    &:active { background-color: rgba(0, 84, 182, 1); }
-    
-    &:hover { background-color: rgba(14, 115, 230, 1); }
+    &:active {
+      background-color: rgba(0, 84, 182, 1);
+    }
+
+    &:hover {
+      background-color: rgba(14, 115, 230, 1);
+    }
 
     &:disabled,
     &[disabled] {
-    background-color: rgba(2, 101, 220, 0.3);
-    cursor: not-allowed;
-   }
+      background-color: rgba(208, 215, 251, 0.17);
+      color: rgba(229, 236, 251, 0.36);
+    }
 
   }
 
   &--secondary {
-    position: relative;
-    background: transparent;
-    width: 150px;
-    height: 48px;
+    background-color: rgba(13, 13, 21, 1);
     border: 2px solid rgba(208, 215, 251, 0.17);
     color: rgba(245, 248, 251, 1);
-    cursor: pointer;
 
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: rgba(255, 255, 255, 0.1);
-      opacity: 0;
-      transition: opacity 0.3s;
-      pointer-events: none;
+
+    &:hover {
+      background-color: rgba(191, 197, 238, 0.12);
     }
 
-    &:hover::after { opacity: 1; }
-
-    &:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
+    &:disabled,
+    &[disabled] {
+      background-color: rgba(208, 215, 251, 0.17);
+      color: rgba(229, 236, 251, 0.36);
+      border-color: rgba(229, 236, 251, 0.36);
     }
+  }
+
+  &:disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }

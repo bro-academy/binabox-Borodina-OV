@@ -3,14 +3,9 @@
 {# {% from 'src/templates/partials/ui/icon.twig' import icon %} #}
 
 {% block content %}
-  {% include 'src/templates/partials/blog-page/blog-banner.twig' %}
-  {% include 'src/templates/partials/blog-page/blog-features.twig' %}
-  {# {% include 'src/templates/partials/blog-page/blog-gallery.twig' %} #}
-  {# {% include 'src/templates/partials/blog-page/blog-hero.twig' %} #}
-  {# {% include 'src/templates/partials/blog-page/blog-paragraph.twig' %} #}
-  {# {% include 'src/templates/partials/blog-page/blog-points.twig' %} #}
-  {# {% include 'src/templates/partials/blog-page/blog-quote.twig' %} #}
-  {# {% include 'src/templates/partials/blog-page/blog-share.twig' %} #}
-  {# {% include 'src/templates/partials/blog-page/blog-tags.twig' %} #}
-  {# {% include 'src/templates/partials/blog-page/blog-sections.twig' %} #}
+	{% include 'src/templates/partials/blog-page/blog-banner.twig' %}
+	<div class="content-wrapper blog-page">
+		{% include 'src/templates/partials/blog-page/blog-sidebar.twig' %}
+		{% include 'src/templates/partials/blog-page/blog-post.twig' %}
+	</div>
 {% endblock %}

@@ -1,6 +1,11 @@
 .footer {
     background-color: rgba(26, 25, 37, 1);
-    padding: 64px;
-    display: grid;
+    padding: 16px;
     gap: 64px;
+    display: flex;
+    border: 2px solid solid black;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 32px;
+    align-items: center;
 }

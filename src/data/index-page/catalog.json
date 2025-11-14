@@ -9,44 +9,75 @@
     "nextLabel": "next arrow",
 	"items": [
 	  {
-		"img": "skeleton.png",
+		"img": "catalog/echo-of-bones.jpg",
 		"alt": "Skeleton",
 		"status": "new",
 		"name": "Echo of Bones",
 		"price": "$1990",
-		"url": "#"
+		"url": "/",
+		"sources": [
+			{
+				"src": "catalog/echo-of-bones@2x.jpg",
+				"type": "jpg"
+			}
+		]
 	  },
 	  {
-		"img": "cat.png",
+		"img": "catalog/cat.jpg",
 		"alt": "Cat",
 		"status": "new",
 		"name": "Nyx the Watcher",
 		"price": "$1990",
-		"url": "#"
+		"url": "/",
+		"sources": [
+			{
+				"src": "catalog/cat@2x.jpg",
+				"type": "jpg"
+			}
+		]
 	  },
 	  {
-		"img": "scissor.png",
+		"img": "catalog/scissor.jpg",
 		"alt": "Scissor",
 		"status": "sold",
 		"name": "Blade of Silence",
 		"price": "$20",
-		"url": "#"
+		"url": "/",
+		"sources": [
+			{
+				"src": "catalog/scissor@2x.jpg",
+				"type": "jpg"
+			}
+		]
 	  },
 	  {
-		"img": "core.png",
+		"img": "catalog/core.jpg",
 		"alt": "Core",
 		"status": "sold",
 		"name": "Data Core: Alpha",
 		"price": "$1,000,000",
-		"url": "#"
+		"url": "/",
+		"sources": [
+			{
+				"src": "catalog/core@2x.jpg",
+				"type": "jpg"
+			}
+		]
+
 	  },
 	  {
-		"img": "console.png",
+		"img": "catalog/console.jpg",
 		"alt": "Console",
 		"status": "",
 		"name": "Phantom Console",
 		"price": "$199,5",
-		"url": "#"
+		"url": "/",
+		"sources": [
+			{
+				"src": "catalog/console@2x.jpg",
+				"type": "jpg"
+			}
+		]
 	  }
 	]
   }

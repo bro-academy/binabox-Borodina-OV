@@ -1,0 +1,28 @@
+.ui-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.ui-section {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.ui-table-container {
+	width: 100%;
+	overflow-x: scroll;
+
+	table {
+		width: 100%;
+		margin: 20px 0;
+		border-collapse: collapse;
+		border: 1px solid rgb(var(--stb-brand-400));
+
+		th,
+		td {
+			padding: 10px;
+			text-align: start;
+			border: 1px solid #fff;
+		}
+	}
+}

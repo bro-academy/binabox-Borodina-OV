@@ -1,5 +1,5 @@
 <header class="header">
-  <img src="{{ header.logo.src }}" alt="{{ header.logo.alt }}" class="header__logo">
+  <img src="/src/assets/images/logo.png" alt="{{ header.logo.alt }}" class="header__logo">
 
   <nav class="header__nav">
     <ul class="header__menu">
@@ -16,9 +16,9 @@
 
   {% for button in header.buttons %}
     {% if button.type == "link" %}
-      <a href="{{ button.url }}" class="button {{ button.class }}">{{ button.label }}</a>
+      <a href="{{ button.url }}" class="button button--secondary {{ button.class }}">{{ button.label }}</a>
     {% elseif button.type == "button" %}
-      <button class="button {{ button.class }}">{{ button.label }}</button>
+      <button class="button button--primary {{ button.class }}">{{ button.label }}</button>
     {% endif %}
   {% endfor %}
 </header>

@@ -1,0 +1,55 @@
+.radio {
+	&:hover label:before {
+		border-color: blue;
+	}
+
+	&__input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+
+		&:checked + label:after {
+			opacity: 1;
+		}
+
+		&:checked + label:before {
+			border-color: blue;
+		}
+	}
+
+	&__label {
+		position: relative;
+		display: inline-block;
+		padding-left: 35px;
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 2px;
+			width: 24px;
+			height: 24px;
+			border: 2px solid #ededed;
+			background: #fff;
+			border-radius: 50%;
+			box-sizing: border-box;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			left: 6px;
+			top: 8px;
+			background: blue;
+			border-radius: 50%;
+			transition: .5s;
+			opacity: 0;
+		}
+	}
+}

@@ -2,8 +2,28 @@
   width: 240px;
   min-height: 40px;
   padding: 10px 12px;
-  border: 2px;
+  border: 2px solid rgba(208, 215, 251, 0.17);
   background: rgba(13, 13, 21, 1);
   font-size: 14px;
-  color: rgba(231, 238, 247, 0.66); 
+  color: rgba(231, 238, 247, 0.66);
+
+  &::placeholder {
+    color: rgba(245, 248, 251, 1);
+  }
+
+  &:hover {
+    border-color: rgba(56, 146, 243, 1);
+  }
+
+  &:focus {
+    border-color: rgba(56, 146, 243, 1);
+  }
+
+  &:disabled,
+  &[disabled] {
+    background: rgba(191, 197, 238, 0.12);
+    border-color: rgba(208, 215, 251, 0.17);
+    color: rgba(231, 238, 247, 0.66);
+    cursor: not-allowed;
+  }
 }

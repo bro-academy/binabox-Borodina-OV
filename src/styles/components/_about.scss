@@ -1,19 +1,37 @@
-
-
 .about {
-    background-color: rgba(26, 25, 37, 1);
+  &__title {
+    text-align: center;
+
+  }
 
   &__description {
     font-size: 20px;
     font-weight: 500;
-  }  
-.counted-list {
-    &__title {
-        font-size: 24px;
-}
+    text-align: center;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
 
- &__text {
-        font-size: 18px;
-}
-}
+  .counted-list__item {
+    background-color: rgba(26, 25, 37, 1);
+    width: 570px;
+    height: 207px;
+    padding: 32px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+  }
+
+  .counted-list {
+    display: flex;
+
+    &__title {
+      font-size: 24px;
+
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
 }

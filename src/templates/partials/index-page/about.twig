@@ -2,14 +2,15 @@
   <h2 class="about__title">{{ about.title }}</h2>
   <p class="about__description">{{ about.description }}</p>
 
-  <ol class="about__list counted-list">
+  <ul class="about__list counted-list">
     {% for item in about.items %}
       <li class="counted-list__item">
+	  	<p class="counted-list__number">{{ item.number }}</p>
         <h3 class="counted-list__title">{{ item.title }}</h3>
         <p class="counted-list__text">{{ item.text }}</p>
       </li>
     {% endfor %}
-  </ol>
+  </ul>
 
   <a href="{{ about.button.url }}" class="button {{ about.button.class }}">
     {{ about.button.label }}

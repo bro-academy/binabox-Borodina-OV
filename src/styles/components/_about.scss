@@ -1,7 +1,6 @@
 .about {
   &__title {
     text-align: center;
-
   }
 
   &__description {
@@ -12,26 +11,36 @@
     letter-spacing: 0px;
   }
 
-  .counted-list__item {
-    background-color: rgba(26, 25, 37, 1);
-    width: 570px;
-    height: 207px;
-    padding: 32px;
-    margin-top: 20px;
-    margin-left: 20px;
-
-  }
-
   .counted-list {
     display: flex;
+	list-style-type: none;
+	gap: 32px;
 
     &__title {
+		position: relative;
+		z-index: 2;
       font-size: 24px;
-
     }
 
     &__text {
       font-size: 18px;
     }
+
+	&__item {
+		position: relative;
+		background-color: rgba(26, 25, 37, 1);
+		min-height: 207px;
+		padding: 64px 32px 32px;
+	}
+
+	&__number {
+		position: absolute;
+		top: 32px;
+		left: 32px;
+		margin: 0;
+		font-size: 80px;
+		color: blue;
+		z-index: 1;
+	}
   }
 }

@@ -13,10 +13,17 @@
         rgba(13, 13, 21, 1);
     padding: 64px 164px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 32px;
     position: relative;
+
+	&__content {
+		max-width: 700px;
+	}
+
+	&__action {
+		display: flex;
+		gap: 8px;
+	}
 
     &__img {
         background: rgba(13, 13, 21, 1);
@@ -27,8 +34,7 @@
         font-weight: 400;
         font-size: 52px;
         line-height: 62px;
-        letter-spacing: -0,5px;
-        max-width: 620px;
+        letter-spacing: -0.5px;
     }
 
     &__title--highlight {

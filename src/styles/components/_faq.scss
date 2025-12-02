@@ -1,10 +1,41 @@
 @use '../base/variables' as *;
 
 .faq {
-    &__question {
         font-family: $accent-font;
         font-weight: 400;
         font-size: 24px;
         color: rgba(245, 248, 251, 1);
+    
+
+    &__title {
+        text-align: center;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(29, 28, 40, 1);
+         gap: 16px;
+    }
+
+    &__item {
+        min-width: 100%;
+        min-height: 56;
+        height: auto;
+        padding: 24px 32px;
+    }
+
+    &__question {
+      font-size: 24px;
+      line-height: 32px;
+    letter-spacing: 0px;
+    }
+
+    &__answer {
+    font: size 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
     }
 }
